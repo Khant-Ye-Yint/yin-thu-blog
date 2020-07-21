@@ -5,7 +5,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Layout from "../components/layout"
 import Head from "../components/head"
 
-import { Container, Row, Image } from "react-bootstrap"
+import { Container, Row, Image, Col } from "react-bootstrap"
 
 import blogStyles from "./blog.module.css"
 
@@ -41,13 +41,7 @@ export default function Blog(props) {
     <Container>
       <Layout>
         <Head title={`${props.data.contentfulBlogPost.title} | Yin's Blog`} />
-        <Container
-          className="mt-5 pt-5 pb-5 border"
-          style={{
-            width: "70%",
-            boxShadow: "1px 1px 5px 1px #ffe4fa",
-          }}
-        >
+        <Container className={`mt-5 pt-5 pb-5 border ${blogStyles.container}`}>
           <Row className="justify-content-center">
             <span className={blogStyles.title} style={{ color: "#28cf90" }}>
               {props.data.contentfulBlogPost.title}
@@ -59,18 +53,18 @@ export default function Blog(props) {
             </p>
           </Row>
           <Row className="justify-content-center mt-4">
-            <span className={blogStyles.content}>
+            <Col className={blogStyles.content} xs={10}>
               {documentToReactComponents(
                 props.data.contentfulBlogPost.body.json,
                 options
               )}
-            </span>
+            </Col>
           </Row>
           {props.data.contentfulBlogPost.images.map(image => (
             <Row className="justify-content-center mt-4">
               <Image
                 src={image.fluid.src}
-                style={{ width: "70%", height: "auto" }}
+                style={{ width: "80%", height: "auto" }}
               />
             </Row>
           ))}

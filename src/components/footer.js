@@ -13,7 +13,7 @@ export default function Footer() {
       }}
     >
       <span style={{ fontSize: "14px", color: "#4aa639" }}>
-        Khant Ye Yint © 2020
+        Yin Thu Thu Khaing © 2020
       </span>
     </Container>
   )

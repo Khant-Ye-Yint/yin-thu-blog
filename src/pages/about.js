@@ -1,5 +1,8 @@
 import React from "react"
 import MyPhoto from "./assets/yttk.svg"
+// import GreenLine from "./assets/greenLine.svg"
+import FacebookLogo from "./assets/facebookLogo.svg"
+//import FacebookBar from "./assets/facebookBar.svg"
 
 import { Container, Row, Col } from "react-bootstrap"
 
@@ -19,21 +22,29 @@ export default function AboutPage() {
               </Container>
             </Col>
             <Col lg="6" xs="11">
-              <h1
-                style={{
-                  fontWeight: "normal",
-                  color: "#454545",
-                  fontSize: "50px",
-                }}
-              >
-                I'm
-              </h1>
-              <h1 style={{ color: "#00CC83", fontSize: "50px" }}>
-                Yin Thu Thu Khaing
-              </h1>
-              <p style={{ fontSize: "14px", color: "#777777" }}>
-                - An amateur photographer who takes photos for fun and passion.
-              </p>
+              <Row>
+                <h1
+                  style={{
+                    fontWeight: "normal",
+                    color: "#454545",
+                    fontSize: "50px",
+                  }}
+                >
+                  I'm
+                </h1>
+                <h1 style={{ color: "#00CC83", fontSize: "50px" }}>
+                  Yin Thu Thu Khaing
+                </h1>
+              </Row>
+              <Row>
+                <p style={{ fontSize: "14px", color: "#777777" }}>
+                  - An amateur photographer who takes photos for fun and
+                  passion.
+                </p>
+              </Row>
+              <Row className="justify-content-center">
+                <FacebookLogo width="50px" />
+              </Row>
             </Col>
           </Row>
         </Container>
