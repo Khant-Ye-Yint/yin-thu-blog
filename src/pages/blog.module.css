@@ -1,0 +1,16 @@
+.blog-card {
+  text-decoration: none;
+  color: #f4f4f4;
+  box-shadow: 1px 1px 3px 1px #ffe4fa;
+  background: rgb(50, 198, 142);
+  background: linear-gradient(
+    to bottom right,
+    rgba(50, 198, 142, 1) 0%,
+    rgba(2, 245, 153, 1) 100%
+  );
+}
+
+.blog-card:hover {
+  box-shadow: 1px 5px 30px -6px #198501;
+  text-decoration: none;
+}

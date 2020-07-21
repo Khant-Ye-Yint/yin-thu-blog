@@ -8,10 +8,10 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import { Container } from "react-bootstrap"
 
-export default function IndexPage() {
+export default function CreativePage() {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulGallery {
+      allContentfulCreation {
         edges {
           node {
             image {
@@ -29,9 +29,9 @@ export default function IndexPage() {
   return (
     <Container>
       <Layout>
-        <Head title="Yin's Gallary" />
+        <Head title="Yin's Creation" />
         <Container className="mt-1">
-          <Gallery edges={data.allContentfulGallery.edges} />
+          <Gallery edges={data.allContentfulCreation.edges} />
         </Container>
       </Layout>
     </Container>
