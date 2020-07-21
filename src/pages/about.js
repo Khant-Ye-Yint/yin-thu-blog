@@ -1,8 +1,6 @@
 import React from "react"
 import MyPhoto from "./assets/yttk.svg"
-// import GreenLine from "./assets/greenLine.svg"
 import FacebookLogo from "./assets/facebookLogo.svg"
-//import FacebookBar from "./assets/facebookBar.svg"
 
 import { Container, Row, Col } from "react-bootstrap"
 
