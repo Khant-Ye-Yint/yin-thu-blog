@@ -2,6 +2,8 @@ import React from "react"
 import MyPhoto from "./assets/yttk.svg"
 import FacebookLogo from "./assets/facebookLogo.svg"
 
+import { Link } from "gatsby"
+
 import { Container, Row, Col } from "react-bootstrap"
 
 import Layout from "../components/layout"
@@ -41,7 +43,12 @@ export default function AboutPage() {
                 </p>
               </Row>
               <Row className="justify-content-center">
-                <FacebookLogo width="50px" />
+                <Link
+                  to="https://www.facebook.com/yinthu.khaing.3"
+                  target="_blank"
+                >
+                  <FacebookLogo width="50px" />
+                </Link>
               </Row>
             </Col>
           </Row>

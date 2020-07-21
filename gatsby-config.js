@@ -31,5 +31,17 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Yin Thu Blog`,
+        short_name: `YinBlog`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: `src/pages/assets/me.jpg`,
+      },
+    },
   ],
 }

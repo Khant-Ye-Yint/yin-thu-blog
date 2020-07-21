@@ -16,6 +16,13 @@
 .title {
   color: #4aa639;
   letter-spacing: 4px;
+  text-decoration: none;
+}
+
+.title:hover {
+  color: #4aa639;
+  letter-spacing: 4px;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 1700px) {

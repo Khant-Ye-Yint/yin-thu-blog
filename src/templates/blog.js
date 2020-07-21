@@ -62,10 +62,16 @@ export default function Blog(props) {
           </Row>
           {props.data.contentfulBlogPost.images.map(image => (
             <Row className="justify-content-center mt-4">
-              <Image
-                src={image.fluid.src}
-                style={{ width: "80%", height: "auto" }}
-              />
+              <Col
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+                xs={10}
+                lg={8}
+              >
+                <Image src={image.fluid.src} width="100%" height="auto" />
+              </Col>
             </Row>
           ))}
         </Container>

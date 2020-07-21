@@ -10,7 +10,10 @@ export default function Header() {
   return (
     <Container>
       <Row className="justify-content-center mt-4">
-        <span className={headerStyles.title}>Yin Thu Thu Khaing</span>
+        <Link to="/" className={headerStyles.title}>
+          {" "}
+          Yin Thu Thu Khaing{" "}
+        </Link>
       </Row>
       <Nav className="justify-content-center mt-4">
         <Nav.Item>
